@@ -20,7 +20,6 @@
   padding: 10px;
   background-color: #86b300;
   margin: 2px;
-  min-height: 45px;
 }
 
 .calendar-day-item:nth-child(7n+0) {
