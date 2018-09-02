@@ -2,8 +2,21 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.input-container {
+.app-header {
+  text-align: center;
+}
+
+.form-container {
   display: flex;
+  padding: 30px;
+}
+
+.input-container {
+  margin-right: 20px;
+}
+
+.form-input {
+  background-color: #f2f2f2;
 }
 
 .calendars-container {
@@ -28,5 +41,13 @@
 @media (max-width: 768px) {
   .calendars-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .input-container {
+    margin-bottom: 15px;
   }
 }
