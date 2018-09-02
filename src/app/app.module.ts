@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CalendarModule } from './components/calendar/calendar.component';
@@ -10,7 +11,8 @@ import { CalendarModule } from './components/calendar/calendar.component';
   ],
   imports: [
     BrowserModule,
-    CalendarModule
+    CalendarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

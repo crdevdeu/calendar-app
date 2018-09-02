@@ -2,18 +2,18 @@
   <div class="app-header">
     <h2>Calendar app</h2>
   </div>
-  <form class="form-container">
+  <form class="form-container" [formGroup]="calendarsDataForm">
     <div class="input-container">
       <label>Start Date: </label>
-      <input type="date" class="form-input">
+      <input formControlName="startDate" type="date" class="form-input">
     </div>
     <div class="input-container">
       <label>Number of days: </label>
-      <input type="number" class="form-input">
+      <input formControlName="numberOfDays" type="number" class="form-input">
     </div>
     <div class="input-container">
       <label>Country code: </label>
-      <input type="text" class="form-input">
+      <input formControlName="countryCode" type="text" class="form-input">
     </div>
   </form>
   <div class="calendars-container">
