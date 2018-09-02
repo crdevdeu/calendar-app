@@ -1,0 +1,25 @@
+<div class="calendar-container">
+  <div class="calendar-header">
+    <div  class="calendar-days-header" *ngIf="showDays">
+      <div>S</div>
+      <div>M</div>
+      <div>T</div>
+      <div>W</div>
+      <div>T</div>
+      <div>F</div>
+      <div>S</div>
+    </div>
+    <div class="calendar-month">
+      {{ upperCaseMonth }} {{ year }}
+    </div>
+  </div>
+  <div class="calendar-container-grid">
+    <div
+      class="calendar-day-item"
+      *ngFor="let calendarItem of dataset"
+      [ngClass]="{ 'invalid-item': !calendarItem.isValid }"
+    >
+      {{ calendarItem.value }}
+    </div>
+  </div>
+</div>

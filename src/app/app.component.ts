@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  daysAmount = 31;
+  monthStartDay = 7;
+  startFrom = 12;
 }

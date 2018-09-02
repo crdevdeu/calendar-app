@@ -1,0 +1,28 @@
+.input-container {
+  display: flex;
+}
+
+.calendars-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar-item {
+  max-width: 350px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .calendars-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
