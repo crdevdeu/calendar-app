@@ -5,6 +5,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CalendarModule } from './components/calendar/calendar.component';
 
+import { CalendarDataService } from './services/calendar-data/calendar-data.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +16,7 @@ import { CalendarModule } from './components/calendar/calendar.component';
     CalendarModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CalendarDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

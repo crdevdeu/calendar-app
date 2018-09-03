@@ -9,6 +9,8 @@
 .form-container {
   display: flex;
   padding: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-container {

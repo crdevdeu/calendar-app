@@ -18,43 +18,15 @@
   </form>
   <div class="calendars-container">
     <div class="calendars-grid">
-      <div class="calendar-item">
+      <div class="calendar-item" *ngFor="let data of calendarData">
         <app-calendar
-          [showDays]="true"
-          month="august"
-          year="2018"
-          [daysAmount]="daysAmount"
-          [monthStartDay]="monthStartDay"
-        >
-        </app-calendar>
-      </div>
-      <div class="calendar-item">
-        <app-calendar
-          [showDays]="true"
-          month="august"
-          year="2018"
-          [daysAmount]="daysAmount"
-          [monthStartDay]="monthStartDay"
-        >
-        </app-calendar>
-      </div>
-      <div class="calendar-item">
-        <app-calendar
-          [showDays]="true"
-          month="august"
-          year="2018"
-          [daysAmount]="daysAmount"
-          [monthStartDay]="monthStartDay"
-        >
-        </app-calendar>
-      </div>
-      <div class="calendar-item">
-        <app-calendar
-          [showDays]="true"
-          month="august"
-          year="2018"
-          [daysAmount]="daysAmount"
-          [monthStartDay]="monthStartDay"
+          [showDays]="data.showDays"
+          [month]="data.month"
+          [startFrom]="data.startFrom"
+          [endIn]="data.endIn"
+          [year]="data.year"
+          [daysAmount]="data.daysAmount"
+          [monthStartDay]="data.monthStartDay"
         >
         </app-calendar>
       </div>

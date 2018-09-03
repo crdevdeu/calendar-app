@@ -13,6 +13,7 @@ export class CalendarComponent implements OnInit {
   @Input() daysAmount: number;
   @Input() monthStartDay: number;
   @Input() startFrom: number;
+  @Input() endIn: number;
   dataset = [];
 
   get upperCaseMonth() {
@@ -25,7 +26,10 @@ export class CalendarComponent implements OnInit {
     }
 
     for (let j = 1; j <= this.daysAmount; j++ ) {
-      if (this.startFrom && j < this.startFrom) {
+      const dateValueIsBeforeStart = this.startFrom && (j < this.startFrom);
+      const dateValueIsAfterEnd = this.endIn && (j > this.endIn);
+
+      if (dateValueIsBeforeStart || dateValueIsAfterEnd) {
         this.dataset.push({ value: '', isValid: false });
       } else {
         this.dataset.push({ value: j, isValid: true });

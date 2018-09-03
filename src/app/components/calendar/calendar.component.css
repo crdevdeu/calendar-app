@@ -16,10 +16,11 @@
 .calendar-day-item {
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 10px;
   background-color: #86b300;
   margin: 2px;
+  min-height: 39px;
+  min-width: 20px;
 }
 
 .calendar-day-item:nth-child(7n+0) {
