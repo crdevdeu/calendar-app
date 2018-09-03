@@ -6,4 +6,5 @@ export interface CalendarData {
   monthStartDay: number;
   startFrom: number;
   endIn: number;
+  holidays: any;
 }

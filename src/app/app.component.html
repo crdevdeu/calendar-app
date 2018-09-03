@@ -16,6 +16,11 @@
       <input formControlName="countryCode" type="text" class="form-input">
     </div>
   </form>
+  <div class="form-messages">
+    <div *ngIf="showDateText" class="form-message-text">- Select date</div>
+    <div *ngIf="showNumberOfDaysText" class="form-message-text">- Select number of days</div>
+    <div *ngIf="showCountryCodeText" class="form-message-text">- Fill in country code to check holidays in range</div>
+  </div>
   <div class="calendars-container">
     <div class="calendars-grid">
       <div class="calendar-item" *ngFor="let data of calendarData">
@@ -27,6 +32,7 @@
           [year]="data.year"
           [daysAmount]="data.daysAmount"
           [monthStartDay]="data.monthStartDay"
+          [holidays]="data.holidays"
         >
         </app-calendar>
       </div>

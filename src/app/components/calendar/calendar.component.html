@@ -17,7 +17,7 @@
     <div
       class="calendar-day-item"
       *ngFor="let calendarItem of dataset"
-      [ngClass]="{ 'invalid-item': !calendarItem.isValid }"
+      [ngClass]="{ 'invalid-item': !calendarItem.isValid, 'holiday-item': calendarItem.isHoliday }"
     >
       {{ calendarItem.value }}
     </div>

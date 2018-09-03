@@ -21,6 +21,15 @@
   background-color: #f2f2f2;
 }
 
+.form-messages {
+  text-align: center;
+  padding: 20px;
+}
+
+.form-message-text {
+  margin-bottom: 10px;
+}
+
 .calendars-container {
   display: flex;
   align-items: center;

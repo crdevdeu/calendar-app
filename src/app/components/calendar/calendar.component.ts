@@ -14,6 +14,7 @@ export class CalendarComponent implements OnInit {
   @Input() monthStartDay: number;
   @Input() startFrom: number;
   @Input() endIn: number;
+  @Input() holidays: any;
   dataset = [];
 
   get upperCaseMonth() {
@@ -32,7 +33,8 @@ export class CalendarComponent implements OnInit {
       if (dateValueIsBeforeStart || dateValueIsAfterEnd) {
         this.dataset.push({ value: '', isValid: false });
       } else {
-        this.dataset.push({ value: j, isValid: true });
+        const isHoliday = this.holidays.indexOf(j) > -1;
+        this.dataset.push({ value: j, isValid: true, isHoliday });
       }
     }
 
