@@ -24,7 +24,14 @@ The holidayapi.com API key and url can be set in the environments files for deve
 
 ## Running the app 
 
+### Prerequisites
+
+- Nodejs
+- Angular-cli
+
 ### Development server
+
+Install dependencies running `npm install` or `yarn install`
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -33,4 +40,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ### Demo
 
-A live version of the app can be accesed navigating to `http://localhost:4200/`
+A live version of the app can be accesed navigating to `https://calendar-app-840cc.firebaseapp.com/`
+
+## Todo
+
+- Add unit tests
+
+- Add missing interfaces and types
+
+## Known bugs
+
+- None
